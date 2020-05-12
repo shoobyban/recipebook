@@ -8,6 +8,7 @@
       if (q.p !== undefined) {
         var a = l.pathname.slice(1, -1) + (q.p || '') + (q.q ? ('?' + q.q) : '') + l.hash
         a = a.replace('/recipebook','/')
+        console.log('HISTORY', a)
         window.history.replaceState(null, null, a);
       }
     }
